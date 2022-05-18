@@ -27,8 +27,6 @@ const Chat = () => {
     const item = {};
     item[prompt] = data.result;
 
-    console.log(item);
-
     setResults([...results, item]);
     setPrompt("");
 
