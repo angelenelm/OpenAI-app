@@ -1,3 +1,4 @@
 import Chat from "./Chat";
+import Footer from "./Footer";
 
-export { Chat };
+export { Chat, Footer };

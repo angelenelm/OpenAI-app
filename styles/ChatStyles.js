@@ -3,12 +3,11 @@ import theme from "./theme";
 const { colors } = theme;
 
 const ChatStyles = styled.div`
-  width: 800px !important;
+  width: 900px !important;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: ${colors.white};
   border-radius: 0.25rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
@@ -17,8 +16,8 @@ const ChatStyles = styled.div`
     display: flex;
     flex-direction: column-reverse;
     overflow: scroll;
-    width: 800px;
-    height: 500px;
+    width: 900px;
+    height: 600px;
     padding: 1rem 2rem;
 
     .prompt {
@@ -27,25 +26,29 @@ const ChatStyles = styled.div`
       max-width: 450px;
       background: ${colors.green};
       color: ${colors.white};
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.75rem;
       border-radius: 1rem;
       margin-bottom: 0.5rem;
+
+      a {
+        text-decoration: underline;
+      }
     }
 
     .result {
       float: left;
       clear: right;
       max-width: 450px;
-      background: ${colors.lightGray};
+      background: ${colors.lighterGray};
       color: ${colors.gray};
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.75rem;
       border-radius: 1rem;
       margin-bottom: 0.5rem;
     }
   }
 
   .prompt-input {
-    width: 800px;
+    width: 900px;
     display: flex;
     flex-direction: row;
     align-items: center;

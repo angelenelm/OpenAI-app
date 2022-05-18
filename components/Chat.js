@@ -39,6 +39,12 @@ const Chat = () => {
     <ChatStyles>
       <div className="chat">
         <ul>
+          <li className="result">
+            Hi! I'm a web development tips chatbot. Ask me anything (realistic) about web
+            development: Javascript tips, what React Hooks are, generate an HTML layout, etc. and
+            I'll try to answer it!
+          </li>
+
           {results.map((item, index) => (
             <>
               <li key={`prompt-${index}`} className="prompt">
